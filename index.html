@@ -2,6 +2,9 @@
 
 <head>
   <title>HAHAHA</title>
+  <script>
+    const currGraph = 'bar'
+  </script>
 </head>
 
 <body>
@@ -9,126 +12,21 @@
 </body>
 <script src="echarts.min.js"></script>
 <script src="colorPallete.js"></script>
+<script src="config/barChartConfig.js"></script>
 <script type="module">
   var myChart = echarts.init(document.getElementById('main'));
-  console.log(colorPallete)
-  var option = {
-    "title": false,
-    "tooltip": {
-      "show": false
-    },
-    "legend": {
-      "type": "scroll",
-      "pageIconSize": 10,
-      "formatter": {
-        "_custom": {
-          "type": "function",
-          "display": "<span>ƒ</span> formatter(name)"
-        }
-      },
-      "orient": "vertical",
-      "data": [],
-      "textStyle": {
-        "fontFamily": "Open Sans"
-      },
-      "right": 0,
-      "itemWidth": 4,
-      "itemHeight": 12,
-      "icon": "rect"
-    },
-    "series": {
-      "type": "bar",
-      "barWidth": "30%",
-      itemStyle: {
-        normal: {
-          color: params => {
-            return colorPallete[params.dataIndex % colorPallete.length]
-          }
-        }
-      },
-      "lineStyle": {
-        "color": "#216ba5",
-        "width": 1
-      },
-      "areaStyle": {
-        "normal": {
-          "color": {
-            "x": 0,
-            "y": 0,
-            "x2": 0,
-            "y2": 1,
-            "type": "linear",
-            "global": false,
-            "colorStops": [
-              {
-                "offset": 0,
-                "color": "#216ba5"
-              },
-              {
-                "offset": 1,
-                "color": "#ffffff"
-              }
-            ]
-          }
-        }
-      },
-      "data": []
-    },
-    "xAxis": {
-      "data": [],
-      "type": "category",
-      "boundaryGap": true,
-      "axisLabel": {
-        "margin": 10,
-        "color": "#6c798f",
-        "fontFamily": "Open Sans",
-        "interval": 0,
-        "rotate": 30,
-        "formatter": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> formatter(name)"
-          }
-        }
-      },
-      "axisLine": {
-        "show": true,
-        "lineStyle": {
-          "color": "#3b1a40",
-          "opacity": 0.6,
-          "width": 1
-        }
-      },
-      "axisTick": {
-        "show": false
-      }
-    },
-    "yAxis": {
-      "type": "value",
-      "axisLabel": {
-        "formatter": "{value}",
-        "margin": 30,
-        "color": "#6c798f",
-        "fontFamily": "Open Sans"
-      },
-      "axisLine": {
-        "lineStyle": {
-          "color": [
-            "#fff"
-          ]
-        }
-      },
-      "splitLine": {
-        "show": true,
-        "lineStyle": {
-          "color": "rgba(193,199,208,0.5)",
-          "type": "dashed"
-        }
-      }
-    }
+  switch(currGraph) {
+    case 'bar':
+      var option = barChartConfig
+      break;
+    case 'line': 
+      break
+    case 'pie':
+      break
+    case 'donut':
+      break
+    default: break
   }
-
-
   myChart.setOption(option);
 </script>
 

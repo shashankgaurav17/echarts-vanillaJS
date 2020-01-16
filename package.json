@@ -1,0 +1,19 @@
+{
+  "name": "echarts-vanillajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "colorPallete.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashankgaurav17/echarts-vanillaJS.git"
+  },
+  "author": "Shashank Gaurav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashankgaurav17/echarts-vanillaJS/issues"
+  },
+  "homepage": "https://github.com/shashankgaurav17/echarts-vanillaJS#readme"
+}
