@@ -3,7 +3,7 @@
 <head>
   <title>HAHAHA</title>
   <script>
-    const currGraph = 'bar'
+    const currGraph = 'donut'
   </script>
 </head>
 
@@ -13,6 +13,8 @@
 <script src="echarts.min.js"></script>
 <script src="colorPallete.js"></script>
 <script src="config/barChartConfig.js"></script>
+<script src="config/donutChartConfig.js"></script>
+<script src="config/pieChartConfig.js"></script>
 <script type="module">
   var myChart = echarts.init(document.getElementById('main'));
   switch(currGraph) {
@@ -22,8 +24,10 @@
     case 'line': 
       break
     case 'pie':
+      var option = pieChartConfig
       break
     case 'donut':
+      var option = donutChartConfig
       break
     default: break
   }
