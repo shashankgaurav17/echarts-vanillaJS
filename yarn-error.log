@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/cyware-31/.nvm/versions/node/v8.9.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js add commitizen
+
+PATH: 
+  /Users/cyware-31/.nvm/versions/node/v8.9.0/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/mysql/bin/
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "echarts-vanillajs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "colorPallete.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/shashankgaurav17/echarts-vanillaJS.git"
+    },
+    "author": "Shashank Gaurav",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/shashankgaurav17/echarts-vanillaJS/issues"
+    },
+    "homepage": "https://github.com/shashankgaurav17/echarts-vanillaJS#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at checkOne (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:62444:11)
+      at Object.check (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:62463:5)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:22803:73
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
+      at <anonymous>

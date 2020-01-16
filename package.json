@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/shashankgaurav17/echarts-vanillaJS/issues"
   },
-  "homepage": "https://github.com/shashankgaurav17/echarts-vanillaJS#readme"
+  "homepage": "https://github.com/shashankgaurav17/echarts-vanillaJS#readme",
+  "dependencies": {
+    "commitizen": "^4.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
