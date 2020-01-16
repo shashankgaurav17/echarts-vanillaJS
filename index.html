@@ -3,7 +3,7 @@
 <head>
   <title>HAHAHA</title>
   <script>
-    const currGraph = 'donut'
+    const currGraph = 'line'
   </script>
 </head>
 
@@ -15,6 +15,7 @@
 <script src="config/barChartConfig.js"></script>
 <script src="config/donutChartConfig.js"></script>
 <script src="config/pieChartConfig.js"></script>
+<script src="config/lineChartConfig.js"></script>
 <script type="module">
   var myChart = echarts.init(document.getElementById('main'));
   switch(currGraph) {
@@ -22,6 +23,7 @@
       var option = barChartConfig
       break;
     case 'line': 
+      var option = lineChartConfig
       break
     case 'pie':
       var option = pieChartConfig

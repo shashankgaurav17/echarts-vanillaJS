@@ -128,7 +128,7 @@ const barChartConfig = {
     axisLine: {
       show: true,
       lineStyle: {
-        color: "#3b1a40",
+        color: "#97a0af",
         opacity: 0.6,
         width: 1
       }
