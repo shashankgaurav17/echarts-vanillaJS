@@ -10,6 +10,10 @@
 <body>
   <div id="main" style="width: 100%;height:400px;"></div>
 </body>
+<!-- <script src="data/bar-data.js"></script> -->
+<!-- <script src="data/donut-data.js"></script> -->
+<script src="data/line-data.js"></script>
+
 <script src="echarts.min.js"></script>
 <script src="colorPallete.js"></script>
 <script src="config/barChartConfig.js"></script>
@@ -18,18 +22,58 @@
 <script src="config/lineChartConfig.js"></script>
 <script type="module">
   var myChart = echarts.init(document.getElementById('main'));
+  var legends = []
+  var chartData = []
   switch(currGraph) {
     case 'bar':
+      data.data.forEach(res => {
+        legends.push(res.label)
+        chartData.push({
+          name: res.label,
+          value: res.value
+        })
+      })
       var option = barChartConfig
+      option.legend.data = legends
+      option.series.data = chartData
+      option.xAxis.data = legends
       break;
-    case 'line': 
+    case 'line':
+      data.data.forEach(res => {
+        legends.push(res.name)
+        chartData.push({
+          name: res.name,
+          value: res.value
+        })
+      })
       var option = lineChartConfig
+      option.legend.data = legends
+      option.series.data = chartData
+      option.xAxis.data = legends
       break
     case 'pie':
+      data.data.forEach(res => {
+        legends.push(res.label)
+        chartData.push({
+          name: res.label,
+          value: res.value
+        })
+      })
       var option = pieChartConfig
+      option.legend.data = legends
+      option.series.data = chartData
       break
     case 'donut':
+      data.data.forEach(res => {
+        legends.push(res.label)
+        chartData.push({
+          name: res.label,
+          value: res.value
+        })
+      })
       var option = donutChartConfig
+      option.legend.data = legends
+      option.series.data = chartData
       break
     default: break
   }

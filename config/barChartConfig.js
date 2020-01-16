@@ -13,23 +13,7 @@ const barChartConfig = {
       }
     },
     orient: "vertical",
-    data: [
-      "User Account Compromise",
-      "Network Scanning",
-      "Spearphishing",
-      "Spamming",
-      "Error",
-      "Hacking",
-      "IP Spoofing",
-      "Lost Device",
-      "Malware",
-      "Phishing",
-      "Website Defacement",
-      "System Misuse",
-      "APT",
-      "Improper Disposal",
-      "Other"
-    ],
+    data: [],
     textStyle: {
       fontFamily: "Open Sans"
     },
@@ -74,42 +58,10 @@ const barChartConfig = {
         }
       }
     },
-    data: [
-      { name: "User Account Compromise", value: 7 },
-      { name: "Network Scanning", value: 8 },
-      { name: "Spearphishing", value: 7 },
-      { name: "Spamming", value: 9 },
-      { name: "Error", value: 2 },
-      { name: "Hacking", value: 0 },
-      { name: "IP Spoofing", value: 7 },
-      { name: "Lost Device", value: 0 },
-      { name: "Malware", value: 16 },
-      { name: "Phishing", value: 13 },
-      { name: "Website Defacement", value: 10 },
-      { name: "System Misuse", value: 7 },
-      { name: "APT", value: 0 },
-      { name: "Improper Disposal", value: 0 },
-      { name: "Other", value: 0 }
-    ]
+    data: []
   },
   xAxis: {
-    data: [
-      "User Account Compromise",
-      "Network Scanning",
-      "Spearphishing",
-      "Spamming",
-      "Error",
-      "Hacking",
-      "IP Spoofing",
-      "Lost Device",
-      "Malware",
-      "Phishing",
-      "Website Defacement",
-      "System Misuse",
-      "APT",
-      "Improper Disposal",
-      "Other"
-    ],
+    data: [],
     type: "category",
     boundaryGap: true,
     axisLabel: {

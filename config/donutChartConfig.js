@@ -10,7 +10,7 @@ const donutChartConfig = {
       _custom: { type: "function", display: "<span>ƒ</span> formatter(name)" }
     },
     orient: "vertical",
-    data: ["Crisis", "Medium", "Unknown", "Low", "High", "Critical"],
+    data: [],
     textStyle: { fontFamily: "Open Sans" },
     right: 0,
     itemWidth: 4,
@@ -21,14 +21,7 @@ const donutChartConfig = {
     name: "",
     type: "pie",
     radius: ["50%", "70%"],
-    data: [
-      { name: "Crisis", value: 1 },
-      { name: "Medium", value: 0 },
-      { name: "Unknown", value: 7 },
-      { name: "Low", value: 1 },
-      { name: "High", value: 0 },
-      { name: "Critical", value: 0 }
-    ],
+    data: [],
     avoidLabelOverlap: false,
     labelLine: { show: false },
     label: { show: false },

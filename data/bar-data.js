@@ -1,4 +1,4 @@
-export default {
+const data = {
   data: [
     {
       filters: { threat_method: "388f9c71-c96c-4d06-993f-a8bbaf7726ee" },
