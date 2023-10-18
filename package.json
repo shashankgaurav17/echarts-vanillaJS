@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/shashankgaurav17/echarts-vanillaJS#readme",
   "dependencies": {
-    "commitizen": "^4.0.3"
+    "commitizen": "^4.2.5"
   },
   "config": {
     "commitizen": {
